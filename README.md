@@ -16,4 +16,17 @@ Powerfull netstandard plugin for handling language localization in Xamarin.Forms
 - **No markup extension needed to bind resource messages**
 - Intellisense available for Resources :heart:
 
-#FULL DOCUMENTATION IN THE NEXT DAYS... I PROMISE
+**Platform Support**
+
+|Platform|Version|
+| ------------------- | :------------------: |
+|Mono| 5.4+|
+|Xamarin.Forms| 3.0+|
+|Xamarin.iOS|iOS 10.14+|
+|Xamarin.Android|API 14+|
+|Windows 10 UWP|10+|
+|Xamarin.Mac|+3.8|
+|watchOS|All|
+|tvOS|All|
+
+# FULL DOCUMENTATION IN THE NEXT DAYS... I PROMISE
