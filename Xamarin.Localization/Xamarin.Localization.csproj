@@ -2,10 +2,20 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageId>Xamarin.Forms.Localization</PackageId>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageIconUrl>https://github.com/jesulink2514/XamarinFastEntry/raw/master/logo.png</PackageIconUrl>
+    <RepositoryUrl>https://github.com/jesulink2514/Xamarin.Localization</RepositoryUrl>
+    <PackageTags>xamarin,localization,xamarin.forms</PackageTags>
+    <Company>SomosTechies inc.</Company>
+    <Authors>Jesus Angulo</Authors>
+    <Description>Brings nice support to multiple language and cultures.
+
+Documentation in the next days...</Description>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="3.0.0.482510" />
+    <PackageReference Include="Xamarin.Forms" Version="^3.0.0.482510" />
   </ItemGroup>
   
 </Project>
