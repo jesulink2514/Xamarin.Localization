@@ -32,4 +32,8 @@ Powerfull netstandard plugin for handling language localization in Xamarin.Forms
 ### Setup
 * Install into your Net Standard project (clients are not needed).
 
+### Contributors
+
+* [Jesus Angulo](https://github.com/jesulink2514)
+
 # FULL DOCUMENTATION IN THE NEXT DAYS... I PROMISE
