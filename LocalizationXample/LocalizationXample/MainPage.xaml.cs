@@ -8,6 +8,7 @@ namespace LocalizationXample
 		{
 			InitializeComponent();
             BindingContext = new MainViewModel();
+            FlowDirection = Localization.Current.FlowDirection;
 		}
     }
 }

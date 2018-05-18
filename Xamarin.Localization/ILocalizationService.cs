@@ -1,4 +1,5 @@
 ﻿using System.Globalization;
+using Xamarin.Forms;
 
 namespace Xamarin
 {
@@ -10,6 +11,7 @@ namespace Xamarin
         CultureInfo CurrentNeutralCultureInfo { get; }
         CultureInfo DeviceCultureInfo { get; }
         bool IsRightToLeft { get; }
+        FlowDirection FlowDirection { get;}
         CultureInfo[] NeutralCultureInfoList { get; }
 
         CultureInfo GetCultureInfo(string name);

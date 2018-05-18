@@ -86,5 +86,14 @@ namespace LocalizationXample {
                 return ResourceManager.GetString("Title", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to User Name:.
+        /// </summary>
+        public static string UserLabel {
+            get {
+                return ResourceManager.GetString("UserLabel", resourceCulture);
+            }
+        }
     }
 }
