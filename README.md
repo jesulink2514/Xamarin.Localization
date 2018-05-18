@@ -29,4 +29,7 @@ Powerfull netstandard plugin for handling language localization in Xamarin.Forms
 |watchOS|All|
 |tvOS|All|
 
+### Setup
+* Install into your Net Standard project (clients are not needed).
+
 # FULL DOCUMENTATION IN THE NEXT DAYS... I PROMISE
