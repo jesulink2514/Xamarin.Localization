@@ -120,6 +120,12 @@
   <data name="ChangeLanguage" xml:space="preserve">
     <value>Change Language</value>
   </data>
+  <data name="PasswordLabel" xml:space="preserve">
+    <value>Password:</value>
+  </data>
+  <data name="PasswordPlaceholder" xml:space="preserve">
+    <value>Enter your password</value>
+  </data>
   <data name="SetLanguage" xml:space="preserve">
     <value>Set the current language</value>
   </data>
@@ -128,5 +134,8 @@
   </data>
   <data name="UserLabel" xml:space="preserve">
     <value>User Name:</value>
+  </data>
+  <data name="UserPlaceholder" xml:space="preserve">
+    <value>Enter your user</value>
   </data>
 </root>

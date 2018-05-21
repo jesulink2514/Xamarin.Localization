@@ -20,7 +20,8 @@ namespace LocalizationXample
         public List<CultureInfo> Languages { get; } = new List<CultureInfo>
         {
             Localization.Current.GetCultureInfo("en"),
-            Localization.Current.GetCultureInfo("ar")
+            Localization.Current.GetCultureInfo("ar"),
+            Localization.Current.GetCultureInfo("fr")
         };
 
         public CultureInfo CurrentLanguage

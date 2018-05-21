@@ -16,8 +16,16 @@
 
             <Label HorizontalOptions="Start"
                    Text="{x:Static local:Messages.UserLabel}"/>
-            <Entry HorizontalOptions="FillAndExpand"/>
+            <Entry HorizontalOptions="FillAndExpand" Placeholder="{x:Static local:Messages.UserPlaceholder}"/>
             
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal">
+
+            <Label HorizontalOptions="Start"
+                   Text="{x:Static local:Messages.PasswordLabel}"/>
+            <Entry HorizontalOptions="FillAndExpand" Placeholder="{x:Static local:Messages.PasswordPlaceholder}"/>
+
         </StackLayout>
 
         <Button Text="{x:Static local:Messages.ChangeLanguage}" Command="{Binding ChangeCommand}"/>

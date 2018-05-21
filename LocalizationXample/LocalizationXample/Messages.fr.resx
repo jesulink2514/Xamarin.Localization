@@ -118,24 +118,24 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="ChangeLanguage" xml:space="preserve">
-    <value>غير اللغة</value>
+    <value>Changer de langue</value>
   </data>
   <data name="PasswordLabel" xml:space="preserve">
-    <value>كلمه السر:</value>
+    <value>Mot de passe:</value>
   </data>
   <data name="PasswordPlaceholder" xml:space="preserve">
-    <value>ادخل رقمك السري</value>
+    <value>Tapez votre mot de passe</value>
   </data>
   <data name="SetLanguage" xml:space="preserve">
-    <value>اضبط اللغة الحالية</value>
+    <value>Définir la langue actuelle</value>
   </data>
   <data name="Title" xml:space="preserve">
-    <value>مرحبا</value>
+    <value>Salut de Xamarin.Localization</value>
   </data>
   <data name="UserLabel" xml:space="preserve">
-    <value>اسم المستخدم:</value>
+    <value>Nom d'utilisateur:</value>
   </data>
   <data name="UserPlaceholder" xml:space="preserve">
-    <value>أدخل المستخدم الخاص بك</value>
+    <value>Entrez votre utilisateur</value>
   </data>
 </root>

@@ -70,6 +70,24 @@ namespace LocalizationXample {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Password:.
+        /// </summary>
+        public static string PasswordLabel {
+            get {
+                return ResourceManager.GetString("PasswordLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enter your password.
+        /// </summary>
+        public static string PasswordPlaceholder {
+            get {
+                return ResourceManager.GetString("PasswordPlaceholder", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Set the current language.
         /// </summary>
         public static string SetLanguage {
@@ -93,6 +111,15 @@ namespace LocalizationXample {
         public static string UserLabel {
             get {
                 return ResourceManager.GetString("UserLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enter your user.
+        /// </summary>
+        public static string UserPlaceholder {
+            get {
+                return ResourceManager.GetString("UserPlaceholder", resourceCulture);
             }
         }
     }

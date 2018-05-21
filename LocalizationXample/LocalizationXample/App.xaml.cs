@@ -13,7 +13,7 @@ namespace LocalizationXample
 			InitializeComponent();
 
             Localization.Current.EnsureDeviceOrDefaultCulture(
-                defaultCultureName:"en",availableCultures:new []{"en","ar"});
+                defaultCultureName:"en",availableCultures:new []{"en","ar","fr"});
             
             Localization.Current.OnCultureChanged += (culture)=>
             {

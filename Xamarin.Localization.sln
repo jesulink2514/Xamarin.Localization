@@ -327,6 +327,7 @@ Global
 		{E0D5C2D9-C0B4-4414-BFA3-B947EE0D6EFD} = {D594701F-2654-44CF-8EAE-02DF429D7BDF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
+		RESX_PrefixTranslations = False
 		SolutionGuid = {C3F0C307-03CD-48A1-8CBC-74DE250FEADB}
 	EndGlobalSection
 EndGlobal
