@@ -49,20 +49,22 @@ Powerfull netstandard plugin for handling language localization in Xamarin.Forms
 ![](https://github.com/jesulink2514/Xamarin.Localization/blob/master/images/2018-05-20_23-32-32.png?raw=true)
 
 3. In order to recognize the device language, you can use `EnsureDeviceOrDefaultCulture`, if device's language match available cultures, that culture will be set, otherwise, `defaultCultureName` will be used.
-
+```csharp
        Localization.Current.EnsureDeviceOrDefaultCulture(defaultCultureName:"en",
                                     availableCultures:new []{"en","ar","fr"});
+```
 
 4. Set the culture of your resource class file when initializing your application.
-
+```csharp
        Messages.Culture = Localization.Current.CurrentCultureInfo;
-
+```
 5. Ensure that you handle the language change event to ensure resource class `Culture` matchs.
-
+```csharp
        Localization.Current.OnCultureChanged += (culture)=>
        {
            Messages.Culture = culture;
        };
+```
        
 *If you are using Xamarin Forms it would be in your App.cs*
 
@@ -88,63 +90,63 @@ Call `Localization.Current` from any project or .net standard library project to
 Gets and set the current culture. By default will be set to the device culture.
 
 Usage sample:
-
+```csharp
     Localization.Current.CurrentCultureInfo = new CultureInfo("en");
-
+```
 **CurrentNeutralCultureInfo**
 
 Gets the neutral culture version of the current culture.
 
 Usage sample:
-
+```csharp
     Localization.Current.CurrentNeutralCultureInfo;
-
+```
 **DeviceCultureInfo**
 
 Gets the device culture
 
 Usage sample:
-
+```csharp
     Localization.Current.DeviceCultureInfo;
-
+```
 **CultureInfoList**
 
 Gets all cultures supported in .NET Framework (neutral & specific cultures)
 
 Usage sample:
-
+```csharp
     Localization.Current.CultureInfoList;
-
+```
 **NeutralCultureInfoList**
 
 Gets all cultures associated with a language (not specific to a country/region).
 
 Usage sample:
-
+```csharp
     Localization.Current.NeutralCultureInfoList;
-
+```
 **GetCultureInfo**
 
 Gets a specific culture by language code.
 
 Usage sample:
-
+```csharp
     Localization.Current.GetCultureInfo("es");
-    
+```
 **IsRightToLeft**
 
 Gets `true` if the current culture is RTL language. 
 
 Usage sample:
-
+```csharp
     Localization.Current.IsRightToLeft
-
+```
 **FlowDirection**
 
 Gets a FlowDirection enum value used for Xamarin.Forms to add RTL support. For more information, review https://docs.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals/localization/right-to-left.
 
 Usage sample:
-
+```csharp
       public partial class MainPage : ContentPage
       {
           public MainPage()
@@ -153,25 +155,25 @@ Usage sample:
               FlowDirection = Localization.Current.FlowDirection;
           }
       }
-     
+```
 **EnsureDeviceOrDefaultCulture(string defaultCultureName, params string[] availableCultures)**
 Try to set the `CurrentCultureInfo` value based on device culture only if it matches available cultures.
 
 Usage sample:
-
+```csharp
        Localization.Current.EnsureDeviceOrDefaultCulture(defaultCultureName:"en",
                                     availableCultures:new []{"en","ar","fr"});
-
+```
 **OnCultureChanged**
 An event that arises when you change the `CurrentCultureInfo`.
 
 Usage sample:
-
+```csharp
        Localization.Current.OnCultureChanged += (culture)=>
        {
            Messages.Culture = culture;
        };
-
+```
 ### Contributors
 
 * [Jesus Angulo](https://github.com/jesulink2514)
