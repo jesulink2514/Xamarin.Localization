@@ -1,6 +1,8 @@
 ## Localization for Xamarin.Forms, Xamarin.iOS , Xamarin.Android, Xamarin.Mac and Xamarin.WPF
 Powerfull netstandard plugin for handling language localization in Xamarin.Forms.
 
+![](https://github.com/jesulink2514/Xamarin.Localization/blob/master/images/demo-localization.gif?raw=true)
+
 ### NuGet
 * Available on NuGet: [Xamarin.Forms.Localization](https://www.nuget.org/packages/Xamarin.Forms.Localization) [![NuGet](https://img.shields.io/nuget/v/Xamarin.Forms.Localization.svg?label=NuGet)](https://www.nuget.org/packages/Xamarin.Forms.Localization)
 
@@ -40,7 +42,11 @@ Powerfull netstandard plugin for handling language localization in Xamarin.Forms
 
 1. Add your Resx files
 
+![](https://github.com/jesulink2514/Xamarin.Localization/blob/master/images/2018-05-20_23-33-02.png?raw=true)
+
 2. Add one .resx file per language you want to support. As you can imagine it must follow a specific naming convention: use the same filename as the base resources file (eg. Messages) followed by a period (.) and then the language code.
+
+![](https://github.com/jesulink2514/Xamarin.Localization/blob/master/images/2018-05-20_23-32-32.png?raw=true)
 
 3. In order to recognize the device language, you can use `EnsureDeviceOrDefaultCulture`, if device's language match available cultures, that culture will be set, otherwise, `defaultCultureName` will be used.
 
@@ -66,11 +72,12 @@ This pacakage depends on new Xamarin.Forms 3.0 package with support to RTL conte
 
 To use the resources in XAML, you need to import your resource class namespace and set any property value using the Static expression. You don't need any custom markup extension and it brings Intellisense support ;)
 
-
+![](https://github.com/jesulink2514/Xamarin.Localization/blob/master/images/2018-05-20_23-45-20.png?raw=true)
 
 ### iOS Considerations
 In the `Info.plist` file add the keys **Localizations & Localization native development region** to change the user interface OS elements. It will take the device language.
 
+![](https://github.com/jesulink2514/Xamarin.Localization/blob/master/images/2018-05-20_23-45-29.png?raw=true)
 
 ### API Details
 
