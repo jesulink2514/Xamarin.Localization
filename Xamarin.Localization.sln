@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2000
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.Localization", "Xamarin.Localization\Xamarin.Localization.csproj", "{2848CE12-EEAF-4409-9CF4-68B0C4BD2676}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xamarin.Localization", "Xamarin.Localization\Xamarin.Localization.csproj", "{2848CE12-EEAF-4409-9CF4-68B0C4BD2676}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sample", "sample", "{D594701F-2654-44CF-8EAE-02DF429D7BDF}"
 EndProject
@@ -13,11 +13,19 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocalizationXample.iOS", "L
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocalizationXample.UWP", "LocalizationXample\LocalizationXample.UWP\LocalizationXample.UWP.csproj", "{C9EF8D1D-E5A3-4292-B4C7-BC2E0E6C4F9F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocalizationXample", "LocalizationXample\LocalizationXample\LocalizationXample.csproj", "{E0D5C2D9-C0B4-4414-BFA3-B947EE0D6EFD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LocalizationXample", "LocalizationXample\LocalizationXample\LocalizationXample.csproj", "{E0D5C2D9-C0B4-4414-BFA3-B947EE0D6EFD}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E442E6AF-6E96-4386-8DB1-158574EA8D0D}"
 	ProjectSection(SolutionItems) = preProject
 		Readme.md = Readme.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Xamarin.Localization.Sources", "Xamarin.Localization.Sources", "{7FB49191-3C8C-4D47-81D0-99BA219829A0}"
+	ProjectSection(SolutionItems) = preProject
+		Xamarin.Localization.Sources\ILocalizationService.cs = Xamarin.Localization.Sources\ILocalizationService.cs
+		Xamarin.Localization.Sources\Localization.cs = Xamarin.Localization.Sources\Localization.cs
+		Xamarin.Localization.Sources\LocalizationService.cs = Xamarin.Localization.Sources\LocalizationService.cs
+		Xamarin.Localization.Sources\Package.nuspec = Xamarin.Localization.Sources\Package.nuspec
 	EndProjectSection
 EndProject
 Global

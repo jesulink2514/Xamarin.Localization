@@ -12,10 +12,13 @@
     <Description>Brings nice support to multiple language and cultures.
 
 Documentation in the next days...</Description>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <PackageProjectUrl>https://github.com/jesulink2514/Xamarin.Localization</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/jesulink2514/Xamarin.Localization/blob/master/LICENSE</PackageLicenseUrl>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="^3.0.0.482510" />
+    <PackageReference Include="Xamarin.Forms" Version="3.0.0.482510" />
   </ItemGroup>
   
 </Project>

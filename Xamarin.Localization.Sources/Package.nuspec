@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Xamarin.Localization.Sources</id>
+    <version>1.0.0</version>
+    <authors>jesulink2514</authors>
+    <owners>jesulink2514</owners>
+    <licenseUrl>https://github.com/jesulink2514/Xamarin.Localization/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/jesulink2514/Xamarin.Localization</projectUrl>
+    <iconUrl>https://github.com/jesulink2514/XamarinFastEntry/raw/master/logo.png</iconUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>
+      Brings nice support to multiple language and cultures.
+
+      Documentation in the next days...
+    </description>
+    <releaseNotes>Summary of changes made in this release of the package.</releaseNotes>
+    <copyright>Copyright 2018</copyright>
+    <tags>xamarin,localization,xamarin.forms</tags>
+  </metadata>
+  <files>
+    <file src="*.cs" target="content"/>
+  </files>
+</package>
