@@ -7,27 +7,63 @@
     <Page.BindingContext>
         <local:MainViewModel />
     </Page.BindingContext>
-    <StackLayout>
-        <Label Text="{x:Static local:Messages.Title}" 
-           HorizontalOptions="Center" />
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Command="{Binding ChangeCommand}">
+            <ToolbarItem.Text>
+                <OnPlatform x:TypeArguments="x:String">
+                    <On Platform="iOS"></On>
+                    <On Platform="Android"></On>
+                    <On Platform="UWP" Value="{x:Static local:Messages.ChangeLanguage}"></On>
+                </OnPlatform>
+            </ToolbarItem.Text>
+            <ToolbarItem.Icon>
+                <OnPlatform x:TypeArguments="FileImageSource">
+                    <On Platform="iOS">settings.png</On>
+                    <On Platform="Android">settings.png</On>
+                    <On Platform="UWP">Assets/settings.png</On>
+                </OnPlatform>
+            </ToolbarItem.Icon>
+        </ToolbarItem>
+    </ContentPage.ToolbarItems>
+    <Grid RowSpacing="15">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        
+        <Label Text="{x:Static local:Messages.Title}" Grid.ColumnSpan="2"
+           HorizontalOptions="Center" FontSize="Large" FontAttributes="Bold"/>
 
-        <StackLayout Orientation="Horizontal">
+        <Image HorizontalOptions="CenterAndExpand" Aspect="AspectFit"
+               Grid.Row="1" Grid.ColumnSpan="2" HeightRequest="200">
+            <Image.Source>
+                <OnPlatform x:TypeArguments="FileImageSource">
+                    <On Platform="iOS,Android" Value="worldflags.jpg" />
+                    <On Platform="UWP" Value="Assets/worldflags.jpg"/>
+                </OnPlatform>
+            </Image.Source>
+        </Image>
 
-            <Label HorizontalOptions="Start"
+        <Label HorizontalOptions="Start" Grid.Row="2" Grid.Column="0"
                    Text="{x:Static local:Messages.UserLabel}"/>
-            <Entry HorizontalOptions="FillAndExpand" Placeholder="{x:Static local:Messages.UserPlaceholder}"/>
-            
-        </StackLayout>
+        <Entry HorizontalOptions="FillAndExpand" Grid.Row="2" Grid.Column="1"
+               Placeholder="{x:Static local:Messages.UserPlaceholder}"/>
 
-        <StackLayout Orientation="Horizontal">
 
-            <Label HorizontalOptions="Start"
+        <Label HorizontalOptions="Start" Grid.Row="3" Grid.Column="0"
                    Text="{x:Static local:Messages.PasswordLabel}"/>
-            <Entry HorizontalOptions="FillAndExpand" Placeholder="{x:Static local:Messages.PasswordPlaceholder}"/>
+        <Entry HorizontalOptions="FillAndExpand" Grid.Row="3" Grid.Column="1"
+               Placeholder="{x:Static local:Messages.PasswordPlaceholder}"/>
 
-        </StackLayout>
-    
-        <Button Text="{x:Static local:Messages.ChangeLanguage}" Command="{Binding ChangeCommand}"/>
-    </StackLayout>
+        <Button Text="{x:Static local:Messages.Login}" Grid.Row="4" Grid.ColumnSpan="2"
+                Style="{StaticResource LoginButton}"/>
 
+    </Grid>
 </ContentPage>

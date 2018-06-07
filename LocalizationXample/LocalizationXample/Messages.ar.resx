@@ -138,4 +138,10 @@
   <data name="UserPlaceholder" xml:space="preserve">
     <value>أدخل المستخدم الخاص بك</value>
   </data>
+  <data name="Settings" xml:space="preserve">
+    <value>إعدادات</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>تسجيل الدخول</value>
+  </data>
 </root>

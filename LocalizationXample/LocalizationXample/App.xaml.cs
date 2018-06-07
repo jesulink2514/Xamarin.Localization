@@ -1,12 +1,10 @@
-using System;
-using System.Diagnostics;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-[assembly: XamlCompilation (XamlCompilationOptions.Compile)]
+[assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace LocalizationXample
 {
-	public partial class App : Application
+    public partial class App : Application
 	{
 		public App ()
 		{

@@ -138,4 +138,10 @@
   <data name="UserPlaceholder" xml:space="preserve">
     <value>Entrez votre utilisateur</value>
   </data>
+  <data name="Settings" xml:space="preserve">
+    <value>Paramètres</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>ouverture de session</value>
+  </data>
 </root>

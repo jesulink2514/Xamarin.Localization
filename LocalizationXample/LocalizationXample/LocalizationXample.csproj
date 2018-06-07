@@ -18,14 +18,18 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="Messages.en.Designer.cs">
+    <Compile Update="Messages.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
-      <DependentUpon>Messages.en.resx</DependentUpon>
+      <DependentUpon>Messages.resx</DependentUpon>
     </Compile>
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Update="Messages.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Messages.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Update="Messages.ar.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
     </EmbeddedResource>
@@ -34,7 +38,6 @@
     </EmbeddedResource>
     <EmbeddedResource Update="Messages.en.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
-      <LastGenOutput>Messages.en.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Update="SettingsPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>

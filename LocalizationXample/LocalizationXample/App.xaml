@@ -3,6 +3,21 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="LocalizationXample.App">
 	<Application.Resources>
-    
+        <ResourceDictionary>
+            <Style TargetType="ContentPage" ApplyToDerivedTypes="True">
+                <Setter Property="Padding" Value="20"/>
+                <Setter Property="BackgroundColor" Value="White"/>
+            </Style>
+            <Style x:Key="BaseButton" TargetType="Button">
+                <Setter Property="TextColor" Value="White"/>
+                <Setter Property="CornerRadius" Value="15"/>
+            </Style>
+            <Style x:Key="LoginButton" BaseResourceKey="BaseButton" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="#4d90fe"/>
+            </Style>
+            <Style x:Key="LanguageButton" BaseResourceKey="BaseButton" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="#22aa36"/>
+            </Style>
+        </ResourceDictionary>
 	</Application.Resources>
 </Application>
