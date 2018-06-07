@@ -12,23 +12,20 @@ namespace LocalizationXample
 		{
 			InitializeComponent();
 
-            Localization.Current.EnsureDeviceOrDefaultCulture(
-                defaultCultureName:"en",availableCultures:new []{"en","ar","fr"});
-            
-            Localization.Current.OnCultureChanged += (culture)=>
-            {
-                Messages.Culture = culture;
-            };
-
-            Messages.Culture = Localization.Current.CurrentCultureInfo;
-
 			MainPage = new NavigationPage(new MainPage());
 		}
 
 		protected override void OnStart ()
 		{
-			// Handle when your app starts
-		}
+            Localization.Current.OnCultureChanged += (culture) =>
+            {
+                Messages.Culture = culture;
+            };
+
+            Localization.Current.EnsureDeviceOrDefaultCulture(
+                defaultCultureName: "en", availableCultures: new[] { "en", "ar", "fr" });
+            
+        }
 
 		protected override void OnSleep ()
 		{

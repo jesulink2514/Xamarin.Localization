@@ -2,15 +2,14 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:LocalizationXample"
-             x:Class="LocalizationXample.MainPage">
+             x:Class="LocalizationXample.MainPage"
+             Title="Localization Mobile">
     <Page.BindingContext>
         <local:MainViewModel />
     </Page.BindingContext>
     <StackLayout>
-        <!-- Place new controls here -->
-    	<Label Text="{x:Static local:Messages.Title}" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+        <Label Text="{x:Static local:Messages.Title}" 
+           HorizontalOptions="Center" />
 
         <StackLayout Orientation="Horizontal">
 
@@ -27,7 +26,7 @@
             <Entry HorizontalOptions="FillAndExpand" Placeholder="{x:Static local:Messages.PasswordPlaceholder}"/>
 
         </StackLayout>
-
+    
         <Button Text="{x:Static local:Messages.ChangeLanguage}" Command="{Binding ChangeCommand}"/>
     </StackLayout>
 
