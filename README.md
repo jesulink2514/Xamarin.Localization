@@ -81,6 +81,9 @@ In the `Info.plist` file add the keys **Localizations & Localization native deve
 
 ![](https://github.com/jesulink2514/Xamarin.Localization/blob/master/images/2018-05-20_23-45-29.png?raw=true)
 
+### UWP Considerations
+To avoid errors setting the default language in a UWP application, ensure you add your default language as a copy with the correct suffix. For example, if you resource file is Messages.resx and your default language is English, **COPY YOUR Messages.resx** and rename it to Messages.en.resx.
+
 ### API Details
 
 Call `Localization.Current` from any project or .net standard library project to gain access to APIs.
